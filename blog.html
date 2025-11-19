@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Canadian Dividend Calculator Blog - In-depth articles on dividend taxation, tax strategies, and financial planning for Canadian employers and investors.">
+    <meta name="keywords" content="dividend blog, Canadian taxation, tax strategies, financial planning, dividend income">
+    <meta name="author" content="Static Ventures Media">
+    <title>Blog - Canadian Dividend Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .btn-primary {
+            @apply bg-[#4A90E2] text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 ease-out hover:scale-105 hover:shadow-xl cursor-pointer;
+        }
+        .btn-secondary {
+            @apply border-2 border-[#4A90E2] text-[#4A90E2] px-8 py-3 rounded-full font-semibold transition-all duration-300 ease-out hover:bg-[#4A90E2] hover:text-white hover:scale-105 cursor-pointer;
+        }
+        .card-hover {
+            @apply transition-all duration-300 ease-out hover:scale-105 hover:shadow-xl;
+        }
+        .section-spacing {
+            @apply py-20 md:py-32;
+        }
+        .container-custom {
+            @apply max-w-7xl mx-auto px-8 md:px-16;
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container-custom flex items-center justify-between py-6">
+            <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-[#4A90E2] rounded-full flex items-center justify-center">
+                    <i class="fas fa-calculator text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold text-black">DivCalc</span>
+            </a>
+            
+            <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4" class="text-black font-medium hover:text-[#4A90E2] transition-colors duration-300">
+                ← Back
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 md:py-28 bg-gradient-to-br from-white via-blue-50 to-white">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-black tracking-tight mb-6 leading-tight">
+                    Our Blog
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-medium mb-4 leading-relaxed">
+                    Expert Insights on Canadian Dividend Taxation
+                </p>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Discover comprehensive guides, tax strategies, and financial planning tips designed to help Canadian employers and investors maximize their dividend income and make informed financial decisions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="container-custom">
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gradient-to-r from-blue-50 to-white border-2 border-gray-100 rounded-2xl p-8 md:p-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
+                        What You'll Find Here
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        Our blog is dedicated to demystifying Canadian dividend taxation and providing actionable strategies to optimize your financial outcomes. We cover topics ranging from the fundamentals of dividend taxation to advanced tax-planning techniques.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Whether you're a business owner looking to optimize your salary-dividend mix, an investor seeking to understand the dividend tax credit system, or a financial professional advising clients, you'll find valuable insights backed by current Canadian tax regulations and real-world examples.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-[#4A90E2] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700"><strong>Tax Strategy Guides:</strong> In-depth articles on maximizing tax efficiency</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-[#4A90E2] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700"><strong>Regulatory Updates:</strong> Latest changes in Canadian tax law</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-[#4A90E2] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700"><strong>Practical Examples:</strong> Real-world scenarios and case studies</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-[#4A90E2] mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700"><strong>Financial Planning Tips:</strong> Strategies to maximize your wealth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post Section -->
+    <section class="section-spacing bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black tracking-tight mb-4">
+                    Latest Article
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Start with our most comprehensive guide to Canadian dividend taxation
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="card-hover bg-white border-2 border-gray-100 rounded-2xl p-8 md:p-12 shadow-md">
+                    <div class="mb-4">
+                        <span class="inline-block bg-blue-100 text-[#4A90E2] px-4 py-2 rounded-full text-sm font-semibold">
+                            Published: November 19, 2025
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
+                        Complete Guide to Canadian Dividend Taxation and Tax-Efficient Strategies
+                    </h3>
+                    
+                    <div class="prose prose-lg max-w-none mb-8">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Master Canadian dividend taxation and maximize your after-tax income with proven strategies. This comprehensive guide walks you through the critical differences between eligible and non-eligible dividends, explaining how the dividend tax credit system works and why provincial variations matter significantly to your bottom line.
+                        </p>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            You'll discover your marginal tax rate's impact on dividend income and explore tax-efficient strategies including income splitting, optimal salary-dividend mixing, and timing considerations. We demystify complex tax concepts through practical examples and actionable tips that you can implement immediately.
+                        </p>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Whether you're a business owner or investor, understanding these fundamentals empowers smarter financial decisions. Learn how to avoid common mistakes and implement strategies that substantially increase your retained dividend income. This guide provides the knowledge you need to navigate Canada's dividend taxation system with confidence and clarity.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                        <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4/blog/complete-guide-to-canadian-dividend-taxation-and-t.html" class="btn-primary">
+                            <span class="flex items-center gap-2">
+                                Read Full Article
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <span class="text-gray-600 text-sm">
+                            Estimated read time: 12 minutes
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Articles Section -->
+    <section class="section-spacing bg-gradient-to-r from-blue-50 to-white">
+        <div class="container-custom">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-black tracking-tight mb-4">
+                    Coming Soon
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    More in-depth articles on dividend strategy and tax optimization
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <!-- Placeholder 1 -->
+                <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 md:p-10 opacity-60">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2v-5.5a2 2 0 012-2H9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-500 mb-4">
+                        Income Splitting Strategies for Canadian Couples
+                    </h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Learn how to leverage income splitting techniques to minimize family tax burden and maximize combined household income...
+                    </p>
+                    <div class="inline-block px-4 py-2 bg-gray-200 text-gray-600 rounded-full text-sm font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+
+                <!-- Placeholder 2 -->
+                <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 md:p-10 opacity-60">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-500 mb-4">
+                        Salary vs. Dividend: Finding Your Optimal Mix
+                    </h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Discover the mathematical framework for determining the perfect balance between salary and dividend payments for your situation...
+                    </p>
+                    <div class="inline-block px-4 py-2 bg-gray-200 text-gray-600 rounded-full text-sm font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+
+                <!-- Placeholder 3 -->
+                <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 md:p-10 opacity-60">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-500 mb-4">
+                        Understanding the Dividend Tax Credit System
+                    </h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Deep dive into how Canada's dividend tax credit system works and why it creates different tax outcomes across provinces...
+                    </p>
+                    <div class="inline-block px-4 py-2 bg-gray-200 text-gray-600 rounded-full text-sm font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+
+                <!-- Placeholder 4 -->
+                <div class="bg-white border-2 border-gray-100 rounded-2xl p-8 md:p-10 opacity-60">
+                    <div class="w-full h-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-500 mb-4">
+                        Tax-Loss Harvesting and Dividend Investment Strategies
+                    </h3>
+                    <p class="text-gray-500 leading-relaxed mb-6">
+                        Explore advanced investment strategies to minimize taxes while maintaining your dividend income growth objectives...
+                    </p>
+                    <div class="inline-block px-4 py-2 bg-gray-200 text-gray-600 rounded-full text-sm font-semibold">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-spacing bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container-custom relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">
+                Ready to Optimize Your Dividend Income?
+            </h2>
+            <p class="text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Use our powerful dividend calculator to apply the strategies you've learned and see real results. Get started with a free calculation today.
+            </p>
+            <a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4" class="inline-block btn-primary">
+                <span class="flex items-center gap-2">
+                    Start Your Free Calculation
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 md:py-20">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-[#4A90E2] rounded-full flex items-center justify-center">
+                            <i class="fas fa-calculator text-white text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-bold">DivCalc</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Empowering Canadian professionals with intelligent dividend planning and tax optimization tools.
+                    </p>
+                </div>
+
+                <!-- Product Column -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Product</h3>
+                    <ul class="space-y-4">
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4#features" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Features</a></li>
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4#benefits" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Get Started</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Company</h3>
+                    <ul class="space-y-4">
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4#about" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">About Us</a></li>
+                        <li><a href="https://staticventures.github.io/canadian-dividend-calculator-2025-11-19-e7ao4#testimonials" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <ul class="space-y-4">
+                        <li class="text-gray-400">
+                            <a href="mailto:staticventuresmedia@gmail.com" class="hover:text-[#4A90E2] transition-colors duration-300">
+                                staticventuresmedia@gmail.com
+                            </a>
+                        </li>
+                        <li class="text-gray-400">
+                            <a href="https://staticventuresmedia.com/" class="hover:text-[#4A90E2] transition-colors duration-300">
+                                Visit Our Website
+                            </a>
+                        </li>
+                        <li class="pt-4">
+                            <div class="flex items-center gap-4">
+                                <a href="#" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin text-xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300" aria-label="Twitter">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300" aria-label="Facebook">
+                                    <i class="fab fa-facebook text-xl"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 py-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2025 Canadian Dividend Calculator. All rights reserved. | Static Ventures Media
+                    </p>
+                    <div class="flex items-center gap-6 text-sm">
+                        <a href="privacy.html" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-[#4A90E2] transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
